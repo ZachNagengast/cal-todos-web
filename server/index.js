@@ -94,7 +94,6 @@ app.post('/getTokens', function (req, res) {
     oauth2Client.getToken(authParams.code, function (err, tokens) {
       // Now tokens contains an access_token and an optional refresh_token.Save them.
       res.send(JSON.stringify(tokens));
-
     });
   });
 
