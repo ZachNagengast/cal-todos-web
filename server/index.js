@@ -45,7 +45,7 @@ app.get('/oauth', function (req, res) {
     });
 
     req.session.state = req.query.state;
-
+    console.log(url);
     res.redirect(url);
   } else {
     res.redirect('https://cal-todos.herokuapp.com');
